@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Azalea Academy of Higher Learning Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Azalea Academy of Higher Learning (A.A.H.L) Survey Form</h1>
+    <p id="description">Help us to serve you better!</p>
+    <form id="survey-form">
+      <fieldset class="keyboard input">
+        <label id="name-label" >Name <input id="name" type="text" placeholder="Enter your full name here" required/></label>
+        <label id="email-label" >Email <input id="email" type="email" placeholder="myemail@site.com" required/></label>
+        <label id="number-label" >Age (optional) <input id="number" type="number" min="5" max="120" placeholder="Use numbers only" /></label>
+      </fieldset>
+      <fieldset class="drop-down_menu">
+        <label>What class are you registered for?
+          <select id="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">SEA Accelerator Masterclass</option>
+            <option value="2">SEA Fast Track Masterclass</option>
+            <option value="3">SEA Focused Masterclass</option>
+            <option value="4">1-on-1 Tutoring</option>
+          </select>
+        </label>
+      </fieldset Class="selector">
+      <label>Would you recommend A.A.H.L?</label>
+      <label><input type="radio" name="referral-option" value="1"/>Of Course</label>
+      <label><input type="radio" name="referral-option" value="2" />Maybe</label>
+      <label><input type="radio" name="referral-option" value="3" />Not sure</label>
+      </fieldset>
+      <fieldset class="QA">
+        <label>What do you love most about A.A.H.L? <select id="qa"><option value="">(select one)</option>
+        <option value="1">Small group classes</option>
+        <option value="2">1-on-1 Tutoring</option>
+        <option value="3">Blended classes</option></select></label>
+      </fieldset>
+      <fieldset class="additional_services">
+        <label>What other services should we provide next term?</label>
+        <label><input type="checkbox" value="1" name="CSEC_group" />CSEC Group Classes</label>
+        <label><input type="checkbox" value="2" name="CSEC_individual" />CSEC 1-on-1 Classes</label>
+        <label><input type="checkbox" value="3" name="SBA" />SBA tutoring</label>
+      </fieldset>
+      <fieldset clas="suggestion box">
+        <label>Leave your comments or suggestions here</label>
+        <textarea name="suggestion box" rows="3" cols="30" placeholder="I think A.A.H.L..."></textarea>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
